@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style_login.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="img-wrapper">
+                <img src="bg_login.jpg" alt="">
+            </div>
+            <div class="banner">
+                <h1>Já possui cadastro?</h1>
+                <p>Faça login.</p>
+            </div>
+            <form>
+                <h3>Fitness & Diet</h3>
+                <p>Digite seu e-mail:</p>
+                <input id='email' type="email" name="email" placeholder="E-mail">
+                <p>Digite sua senha:</p>
+                <input id='senha' type="password" name="senha" placeholder="Senha">
+                <div class="bg_btn">
+                    <input id='submit' type="submit" name="acao" value="Entrar" class="entrar">
+                </div>
+                <div class="social">
+                    <p>Ou</p>
+                    <p>Faça login com suas redes-sociais:</p>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                    <div class="cadastro">
+                        <p>Não possui cadastro? Se <a href="cadstro.html">registre</a> agora!</p>
+                    </div>
+                </div>
+            </form>
+        </header>
+    </div>
+    <script>
+        var email = document.getElementById('email')
+        var senha = document.getElementById('senha')
+
+        email.addEventListener('focus', ()=>{
+            email.style.borderColor = '#1abc9b'
+        })
+        email.addEventListener('blur', ()=>{
+            email.style.borderColor = '#ccc'
+        })
+        senha.addEventListener('focus', ()=>{
+            senha.style.borderColor = '#1abc9b'
+        })
+        senha.addEventListener('blur', ()=>{
+            senha.style.borderColor = '#ccc'
+        })
+    </script>
+</body>
+</html>
