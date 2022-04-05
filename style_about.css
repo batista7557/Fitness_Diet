@@ -59,7 +59,7 @@ header .navigation li a:hover{
 }
 
 .conteudo{
-    background-color: rgb(1, 192, 81);
+    background-color: #03a9f4;
 }
 
 .quemSomos{
@@ -74,7 +74,7 @@ header .navigation li a:hover{
 }
 
 .quemSomos h1{
-    color: #0292d4;
+    color: black;
 }
 
 footer{

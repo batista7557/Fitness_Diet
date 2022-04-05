@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cal_style.css" />
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+    <title>Controle de despesas</title>
+  </head>
+  <body>
+    <section class="header">
+        <header>
+            <img src="logo.png" alt="" class="logo">
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Treino</a></li>
+                <li><a href="imc.html">Taxa metabólica</a></li>
+                <li><a href="cont_calorias.html">Contador de calorias</a></li>
+                <li><a href="about.html">Sobre nós</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </header>
+    </section>
+    <div class="container">
+      <h2>Contador de calorias</h2>
+      <h4>Saldo atual</h4>
+      
+      <h1 id="balance" class="balance">0.00</h1>
+
+      <h3>Refeições</h3>
+      
+      <ul id="transactions" class="transactions"></ul>
+
+      <h3>Adicionar refeição</h3>
+      
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Nome</label>
+          <input autofocus type="text" id="text" placeholder="Nome do alimento" />
+        </div>
+
+        <div class="form-control">
+          <label for="amount">Valor <br/>
+          </label>
+          <small>(kcal)</small>
+          <input type="number" id="amount" placeholder="Quantidade de calorias" />
+        </div>
+
+        <button class="btn">Adicionar</button>
+      </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2022, FITNESS&DIET - Todos os direitos reservados
+            </p>
+            <div class="social-list">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script_cal.js"></script>
+  </body>
+</html>
